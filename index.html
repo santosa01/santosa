@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santosa</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo (2).png">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" href="assets/css/mobilemenu.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/glightbox.min.css" /> -->
+    <link rel="stylesheet" href="../../../../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.css" />
+    <!-- Tailwind css -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add("dark");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.documentElement.classList.remove("dark");
+        } 
+    </script>
+</head>
+
+<body class="font-rubik dark:bg-dark_primary_bg">
+
+    <!-- Preloader start -->
+    <div id="preloader">
+        <div class="loader--border"></div>
+    </div>
+    <!-- Preloader end -->
+
+    
+
+    <!-- Header area start -->
+    <header class="absolute w-full left-0 top-0">
+        <div class="header__sticky py-5">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                    <h3>
+                        Anto
+                    </h3>
+                    <div class="flex items-center md:hidden">
+                        <nav>
+                            <ul class="flex items-center">
+                                <li>
+                                    <a href="#home"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#about"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">TENTANG</a>
+                                </li>
+                                </li>
+                                <li>
+                                    <a href="#services"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">PENGALAMAN</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">PORTFOLIO</a>
+                                </li>
+                                <li><a href="#contact"
+                                        class="text-[17px] xl:text-[19px] text-primary dark:text-white font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300 ltr:ml-[26px] ltr:xl:ml-[44px] rtl:mr-[26px] rtl:xl:mr-[44px] relative after:absolute after:content-[''] after:h-[2px] after:w-0 after:bottom-[3px] ltr:after:left-0 rtl:after:right-0 after:transition-[.5s] after:bg-accent1 py-[8px] hover:after:w-full">KONTAK</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="lg:hidden">
+                        <button class="offcanvas__header--menu__open--btn text-primary dark:text-white " data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-menu">
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Offcanvas header menu -->
+            <div class="offcanvas__header lg:hidden dark:bg-gray-800">
+                <div class="offcanvas__inner">
+                    <div class="offcanvas__logo">
+                        <a class="offcanvas__logo_link" href="index.html">
+                            <img class="dark:hidden" src="assets/images/logo.png" alt="Grocee Logo" width="158"
+                                height="36">
+                            <img class="hidden dark:block" src="assets/images/logo-light.png" alt="Grocee Logo"
+                                width="158" height="36">
+                        </a>
+                        <button class="offcanvas__close--btn dark:text-white" data-offcanvas>close</button>
+                    </div>
+                    <nav class="offcanvas__menu">
+                        <ul class="offcanvas__menu_ul">
+                            <li class="offcanvas__menu_li">
+                                <a class="offcanvas__menu_item dark:text-white" href="#home">Home</a>
+                            </li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#about">About</a>
+                            </li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#services">Services</a></li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#portfolio">Portfolio</a></li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#blog">Blog</a></li>
+                            <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white"
+                                    href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <button
+                            class="flex mx-auto bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1] mt-[30px]">
+                            <span
+                                class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-download">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </span>
+                            <span
+                                class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">Download
+                                CV</span>
+                        </button>
+                    </nav>
+
+                </div>
+            </div>
+            <!-- End Offcanvas header menu -->
+        </div>
+
+
+    </header>
+    <!-- Header area end -->
+
+    <!-- Main wrapper start -->
+    <main>
+        <!-- Hero section start -->
+        <section
+            class="bg-cover bg-no-repeat bg-center sm:h-full only-md:h-screen lg:min-h-screen flex justify-center items-center overflow-hidden bg-[url('../images/hero-bg-img.png')] bg-[#DAEEF1] dark:bg-[url('../images/hero-bg-img-dark.png')] dark:bg-dark_primary_bg dark:border-b dark:border-dark_accent1"
+            id="home">
+            <div
+                class="container mx-auto flex sm:flex-col items-center justify-center lg:mt-[40px] only-md:mt-[40px] sm:pt-[100px] sm:pb-[70px]">
+                <div class="lg:max-w-[40%] sm:max-w-[60%] xs:max-w-[85%] only-md:max-w-[40%] flex justify-end">
+                    <div class="relative only-xl:max-w-[70%]">
+                        <img class="hidden dark:block" src="assets/images/hero-bg-img-dark.png" alt="">
+                        <img class="dark:hidden" src="assets/images/anto.png" alt="">
+                        <span
+                            class="absolute top-[100px] lg:top-[210px] right-[-20px] only-md:right-[-10px] only-xl:max-w-[65px] lg:max-w-[80px] xl:max-w-[105px] sm:max-w-[50px] only-md:max-w-[70px] animateUpDown"><img
+                                src="assets/images/photoshop-logo.png" alt=""></span>
+                        <span
+                            class="absolute top-[80px] left-[-40px] md:left-[-10px] only-xl:max-w-[65px] lg:max-w-[80px] xl:max-w-[105px] sm:max-w-[50px] only-md:max-w-[70px] animateUpDown"><img
+                                src="assets/images/figma.png" alt=""></span>
+
+                        <div
+                            class="flex items-center absolute bottom-0 right-0 bg-white dark:bg-dark_accent1 rounded-[50px] px-[15px] py-[15px] shadow-[0_0_50px_0_rgba(196,206,213,0.2)] dark:shadow-[0_0_50px_0_rgba(0,0,0,0.2)]">
+                            <div class="text-accent1 w-[45px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-check-circle">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="ltr:xl:pl-[95px] ltr:lg:pl-[50px] ltr:only-md:pl-[40px] rtl:xl:pr-[95px] rtl:lg:pr-[50px] rtl:only-md:pr-[40px] flex-grow sm:mt-[30px] sm:text-center">
+                    <h1
+                        class="lg:text-[60px] only-md:text-[40px] sm:text-[28px] font-bold font-heebo text-heading dark:text-white">
+                        Muhamad S<span class="text-danger">anto</span>sa
+                    </h1>
+                    <h4 class="font-heebo font-normal text-primary dark:text-white">UX/UI Designer and Developer </h4>
+
+                    <p
+                        class="lg:text-[20px] md:text-[16px] text-paragraph dark:text-slate-200 lg:mt-[18px] md:mt-[15px]">
+                        Tetaplah berjalan, meski langkahmu terasa berat. Setiap usaha adalah langkah menuju keberhasilan
+                        yang lebih besar</p>
+
+                    <div class="flex items-center gap-[18px] flex-wrap mt-[30px] sm:justify-center">
+                        <button
+                            class="flex bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center ltr:ml-[32px] rtl:mr-[32px] transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1]">
+                            <span
+                                class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-download">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </span>
+                            <a href="https://www.canva.com/design/DAF4-ylEfi4/CGNZ0msSGTEW_EkjU2g_ew/view?utm_content=DAF4-ylEfi4&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="ltr:xl:pr-[5px] ltr:lg:pr-[5px] rtl:xl:pl-[5px] rtl:lg:pl-[5px] relative z-[8] flex-shrink-0">Download
+                                CV</span>
+                        </button>
+                        <div class="flex items-center flex-wrap gap-[15px] sm:justify-center">
+                            <div class="flex items-center">
+                                <a href="#"
+                                    class="w-[30px] h-[30px] flex items-center justify-center text-accent1 border border-accent1 transition duration-300 hover:bg-accent1 hover:text-white rounded-full">
+                                    <svg fill="currentColor" stroke="currentColor" width="13" height="14"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path
+                                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="w-[30px] h-[30px] flex items-center justify-center text-accent1 border border-accent1 transition duration-300 hover:bg-accent1 hover:text-white rounded-full ltr:ml-[10px] rtl:mr-[10px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="w-[30px] h-[30px] flex items-center justify-center text-accent1 border border-accent1 transition duration-300 hover:bg-accent1 hover:text-white rounded-full ltr:ml-[10px] rtl:mr-[10px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="w-[30px] h-[30px] flex items-center justify-center text-accent1 border border-accent1 transition duration-300 hover:bg-accent1 hover:text-white rounded-full ltr:ml-[10px] rtl:mr-[10px]">
+                                    <svg fill="currentColor" stroke="currentColor" width="13" height="14"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="w-[30px] h-[30px] flex items-center justify-center text-accent1 border border-accent1 transition duration-300 hover:bg-accent1 hover:text-white rounded-full ltr:ml-[10px] rtl:mr-[10px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telegram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero section end -->
+
+        <!-- About me section start -->
+        <section
+            class="bg-cover bg-no-repeat bg-center bg-[url('../images/about-me-bg.png')] bg-[#ECF1F6] dark:bg-dark_primary_bg dark:bg-none py-[70px] lg:py-[100px] dark:border-t dark:border-b dark:border-dark_accent1"
+            id="about">
+            <div class="container mx-auto">
+                <div class="flex justify-between sm:flex-wrap sm:flex-col-reverse">
+                    <div class="w-full lg:max-w-[550px]">
+                        <div>
+                            <h1 class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">
+                                Tentang
+                                Saya</h1>
+                            <h2
+                                class="text:[28px] lg:text-[48px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-[#000248] dark:text-white">
+                                PERKENALAN SINGKAT</h2>
+
+                        </div>
+                        <div class="mt-[30px]">
+                            </h3>
+                            <p class="text-[17px] text-[#636363] dark:text-slate-200 mt-[10px]">
+                                Seorang yang tenggelam dalam kesadaran era digital memegang kendali atas teknologi,<br>
+                                memeluk setiap inovasi sebagai tongkat keajaiban menuju tujuan mereka. Mereka tidak<br>
+                                sekadar menggunakan perangkat lunak dan platform online; mereka memahami esensi di
+                                balik<br>
+                                algoritma dan infrastruktur digital untuk menggali kekuatan tersembunyi yang bisa<br>
+                                diterapkan dalam kehidupan sehari-hari.<br><br>
+                            </p>
+
+
+                            <ul class="flex justify-between flex-wrap mt-[18px]">
+                                <li
+                                    class="text-paragraph dark:text-slate-200 w-full xs:max-w-[100%]  max-w-[50%] ltr:pl-[18px] rtl:pr-[18px] my-[10px] relative before:absolute before:content-[''] before:bg-accent1 before:w-[6px] before:h-[6px] ltr:before:left-0 rtl:before:right-0 before:top-[8px] before:rounded-full after:absolute after::content-[''] after:w-4 after:h-4 after:border-2 after:border-accent1 ltr:after:left-[-5px] rtl:after:right-[-5px] after:top-[3px] after:border-solid after:rounded-full text-[17px]">
+                                    Nama : Muhamad Santosa</li>
+
+                                <li
+                                    class="text-paragraph dark:text-slate-200 w-full xs:max-w-[100%]  max-w-[50%] ltr:pl-[18px] rtl:pr-[18px] my-[10px] relative before:absolute before:content-[''] before:bg-accent1 before:w-[6px] before:h-[6px] ltr:before:left-0 rtl:before:right-0 before:top-[8px] before:rounded-full after:absolute after::content-[''] after:w-4 after:h-4 after:border-2 after:border-accent1 ltr:after:left-[-5px] rtl:after:right-[-5px] after:top-[3px] after:border-solid after:rounded-full text-[17px]">
+                                    Nama Panggilan : Anto</li>
+
+                                <li
+                                    class="text-paragraph dark:text-slate-200 w-full xs:max-w-[100%]  max-w-[50%] ltr:pl-[18px] rtl:pr-[18px] my-[10px] relative before:absolute before:content-[''] before:bg-accent1 before:w-[6px] before:h-[6px] ltr:before:left-0 rtl:before:right-0 before:top-[8px] before:rounded-full after:absolute after::content-[''] after:w-4 after:h-4 after:border-2 after:border-accent1 ltr:after:left-[-5px] rtl:after:right-[-5px] after:top-[3px] after:border-solid after:rounded-full text-[17px]">
+                                    Domisili : Kuningan Jawa Barat</li>
+
+
+                            </ul>
+                            <a href="#" class="btn solid-btn text-accent1 mt-[35px] inline-block">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About me section end -->
+
+
+        <!--  Resume section start -->
+        <section class="lg:py-[100px] md:py-[70px]">
+            <div class="container mx-auto">
+                <!-- Section title start -->
+                <div
+                    class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
+                    <div class="max-w-full lg:max-w-[575px]  w-full">
+                        <span
+                            class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">PENGALAMAN
+                            DAN
+                            PENDIDIKAN</span>
+                        <h2
+                            class="text:[28px] lg:text-[48px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-[#000248] dark:text-white">
+                            Resume of Experience
+                            and Education
+                        </h2>
+                    </div>
+                    <div class="md:grow">
+                        <p
+                            class="text-[#636363] dark:text-slate-200 text-[17px] leading-[28px] lg:max-w-[472px] w-full">
+                            Promote
+                            your blog posts, case udie, and product ouncems
+                            with the the branded videoscustomers coming back for services Makes best effort.</p>
+                    </div>
+                </div>
+                <!-- Section title end -->
+
+                <!-- Resume wrapper start -->
+                <div class="flex flex-wrap">
+
+                    <!-- Skill -->
+                    <div class="w-full max-w-[50%] sm:max-w-full flex-grow">
+                        <div class="relative ltr:pl-[30px] rtl:pr-[30px]">
+                            <!-- border line -->
+                            <div class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1">
+                            </div>
+                            <!-- border line  end-->
+
+                            <!-- Single resume start -->
+                            <div
+                                class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative">
+                                <span
+                                    class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                                <div class="w-[70px] h-[70px]">
+                                    <span
+                                        class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                        <svg width="25" height="40" fill="currentColor" stroke="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                                    <div
+                                        class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                                        <h3
+                                            class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white">
+                                            Magang / PKL</h3>
+                                        <span
+                                            class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">PT
+                                            INOVINDO DIGITAL MEDIA</span>
+                                    </div>
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">
+                                        Telah Melaksanakan Praktik Kerja Lapangan ( PKL ) Untuk Kopetensi Keahlian
+                                        Rekayasa Perangkat Lunak ( RPL )</p>
+                                    <span
+                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2024</span>
+                                </div>
+                            </div>
+                            <!-- Single resume end -->
+
+                            <!-- Single resume start -->
+                            <div
+                                class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative mt-[40px]">
+                                <span
+                                    class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                                <div class="w-[70px] h-[70px]">
+                                    <span
+                                        class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                        <svg width="25" height="40" fill="currentColor" stroke="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                                    <div
+                                        class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                                        <h3
+                                            class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white">
+                                            Uji Kopetensi Industri</h3>
+                                        <span
+                                            class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">PT
+                                            INOVINDO</span>
+                                    </div>
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">
+                                        Sebagai Peserta UJI KOPETENSI INDUSTRI Pada Program Praktisi Dunia Kerja
+                                        Mengajar Di SMK</p>
+                                    <span
+                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2023</span>
+                                </div>
+                            </div>
+                            <!-- Single resume end -->
+
+                            <!-- Single resume start -->
+                            <div
+                                class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative mt-[40px]">
+                                <span
+                                    class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                                <div class="w-[70px] h-[70px]">
+                                    <span
+                                        class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                        <svg width="25" height="40" fill="currentColor" stroke="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path
+                                                d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                                    <div
+                                        class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                                        <h3
+                                            class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white">
+                                            UI/UX
+                                            DESIGNER</h3>
+                                        <span
+                                            class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">MINI
+                                            BOOTCAMP</span>
+                                    </div>
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">
+                                        Untuk partisipasi Anda dalam menyelesaikan Mini Bootcamp: Desain UI/UX pada
+                                        tanggal 18 - 22 September 2023 yang diselenggarakan oleh Skilvul.</p>
+                                    <span
+                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2023</span>
+                                </div>
+                            </div>
+                            <!-- Single resume end -->
+                        </div>
+                    </div>
+                    <!-- Skill -->
+
+                    <!-- Education -->
+                    <div class="w-full max-w-[50%] sm:max-w-full flex-grow  sm:mt-[40px]">
+                        <div class="relative ltr:pl-[30px] rtl:pr-[30px]">
+                            <!-- border line -->
+                            <div class="absolute w-[1px] ltr:left-0 rtl:right-0 top-[10px] bottom-[5px] bg-accent1">
+                            </div>
+                            <!-- border line  end-->
+
+                            <!-- Single resume start -->
+                            <div
+                                class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative">
+                                <span
+                                    class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                                <div class="w-[70px] h-[70px]">
+                                    <span
+                                        class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                        <svg width="25" height="44" fill="currentColor" stroke="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path
+                                                d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                                    <div
+                                        class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                                        <h3
+                                            class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white">
+                                            SMK Muhammadiyah 2 Kuningan</h3>
+                                        <span
+                                            class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">2023
+                                            - 2025
+                                        </span>
+                                    </div>
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">
+                                        Rekayasa Perangkat Lunak</p>
+                                    <span
+                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2020</span>
+                                </div>
+                            </div>
+                            <!-- Single resume end -->
+
+                            <!-- Single resume start -->
+                            <div
+                                class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative mt-[40px]">
+                                <span
+                                    class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                                <div class="w-[70px] h-[70px]">
+                                    <span
+                                        class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                        <svg width="25" height="44" fill="currentColor" stroke="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path
+                                                d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                                    <div
+                                        class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                                        <h3
+                                            class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white">
+                                            MTsN 5 Kuningan</h3>
+                                        <span
+                                            class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">
+                                            2019 - 2022</span>
+                                    </div>
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">
+                                        Pendidikan Dasar Menengah</p>
+                                    <span
+                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2018</span>
+                                </div>
+                            </div>
+                            <!-- Single resume end -->
+
+                            <!-- Single resume start -->
+                            <div
+                                class="flex ltr:pr-[50px] ltr:sm:pr-[0] ltr:lg:pr-[70px rtl:pl-[50px] rtl:sm:pl-[0] rtl:lg:pl-[70px relative mt-[40px]">
+                                <span
+                                    class="absolute w-[20px] h-[20px] ltr:left-[-40px] rtl:right-[-40px] top-[10px] bg-accent1 rounded-full z-10 before:absolute before:bg-white before:w-[16px] before:h-[16px] before:rounded-full ltr:before:left-[2px] rtl:before:right-[2px] before:top-[2px]"></span>
+                                <div class="w-[70px] h-[70px]">
+                                    <span
+                                        class="w-[50px] h-[50px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                        <svg width="25" height="44" fill="currentColor" stroke="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                            <path
+                                                d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="flex-grow ltr:pl-[15px] rtl:pr-[15px]">
+                                    <div
+                                        class="flex items-center only-md:flex-col only-md:items-start 2xs:flex-col 2xs:items-start">
+                                        <h3
+                                            class="font-heebo 2xs:text-[18px] text-[20px] lg:text-[25px] text-primary dark:text-white">
+                                            SDN 2 Bakom</h3>
+                                        <span
+                                            class="bg-accent1 text-white text-[13px] rounded-[30px] px-[15px] py-[5px] uppercase ltr:ml-[15px] rtl:mr-[15px] ltr:only-md:ml-0 only-md:my-[5px] ltr:2xs:ml-0 rtl:only-md:m-0 rtl:2xs:mr-0 2xs:my-[5px] text-center">
+                                            2012 - 2018</span>
+                                    </div>
+                                    <p class="text-paragraph dark:text-slate-200 mt-[10px] text-[17px]">
+                                        Pendidikan dasar</p>
+                                    <span
+                                        class="text-[17px] font-medium text-accent1 relative ltr:pl-[20px] rtl:pr-[20px] before:absolute before:bg-accent1 before:w-[7px] before:h-[7px] ltr:before:left-0 rtl:before:right-0 before:top-[50%] before:translate-y-[-50%] mt-[20px] block">2015</span>
+                                </div>
+                            </div>
+                            <!-- Single resume end -->
+
+                        </div>
+                    </div>
+                    <!-- Education -->
+                </div>
+                <!-- Resume wrapper end -->
+            </div>
+        </section>
+        <!--  Resume section end -->
+
+        <!--  Skill section start -->
+        <section class="lg:pb-[100px] md:pb-[70px]">
+            <div class="container mx-auto">
+                <!-- Section title start -->
+                <div
+                    class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
+                    <div class="max-w-full lg:max-w-[575px]  w-full">
+                        <span
+                            class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">SKILLs</span>
+                        <h2
+                            class="text:[28px] lg:text-[48px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-[#000248] dark:text-white">
+                            Skill of Best Masters
+                            Software Skills.
+                        </h2>
+                    </div>
+                    <div class="md:grow">
+                        <p
+                            class="text-[#636363] dark:text-slate-200 text-[17px] leading-[28px] lg:max-w-[472px] w-full">
+                            Promote
+                            your skills, case studies, and product ouncems
+                            with the the branded videoscustomers coming back for services Makes best effort.</p>
+                    </div>
+                </div>
+                <!-- Section title end -->
+
+                <!-- Resume wrapper start -->
+                <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] md:flex-wrap md:text-center">
+
+                    <!-- Column start -->
+                    <div class="max-w-full lg:max-w-[472px]  w-full only-md:px-7 sm:px-5">
+
+                        <!-- Single skill start -->
+                        <div class="relative mb-7">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-medium text-primary dark:text-white">HTML</span>
+                                <span
+                                    class="text-xs font-medium text-white bg-accent1 dark:text-white absolute py-1.5 px-1.5 bottom-6 rounded-sm before:absolute before:content-[''] before:bg-accent1 before:w-5 before:h-5 before:clip-polygon before:top-4 ltr:before:left-2 rtl:before:right-2 before:-z-10 ltr:left-[calc(60%_-_20px)] rtl:right-[calc(60%_-_20px)]">Pemula</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-[10px] dark:bg-gray-700 flex items-center">
+                                <div class="bg-accent1 h-[6px] rounded-full mx-[2px]" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <!-- Single skill end -->
+
+                        <!-- Single skill start -->
+                        <div class="relative mb-7">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-medium text-primary dark:text-white">CSS</span>
+                                <span
+                                    class="text-xs font-medium text-white bg-accent1 dark:text-white absolute py-1.5 px-1.5 bottom-6 rounded-sm before:absolute before:content-[''] before:bg-accent1 before:w-5 before:h-5 before:clip-polygon before:top-4 before:left-2 before:-z-10 ltr:left-[calc(75%_-_20px)] rtl:right-[calc(75%_-_20px)]">Pemula</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-[10px] dark:bg-gray-700 flex items-center">
+                                <div class="bg-accent1 h-[6px] rounded-full mx-[2px]" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <!-- Single skill end -->
+
+                        <!-- Single skill start -->
+                        <div class="relative">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-medium text-primary dark:text-white">Bootstrap</span>
+                                <span
+                                    class="text-xs font-medium text-white bg-accent1 dark:text-white absolute py-1.5 px-1.5 bottom-6 rounded-sm before:absolute before:content-[''] before:bg-accent1 before:w-5 before:h-5 before:clip-polygon before:top-4 before:left-2 before:-z-10 ltr:left-[calc(90%_-_20px)] rtl:right-[calc(90%_-_20px)]">Pemula</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-[10px] dark:bg-gray-700 flex items-center">
+                                <div class="bg-accent1 h-[6px] rounded-full mx-[2px]" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <!-- Single skill end -->
+
+                    </div>
+                    <!-- Column end -->
+
+                    <!-- Column start -->
+                    <div class="max-w-full lg:max-w-[472px] w-full only-md:px-7 sm:px-5">
+                        <!-- Single skill start -->
+                        <div class="relative mb-7">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-medium text-primary dark:text-white">Laravel</span>
+                                <span
+                                    class="text-xs font-medium text-white bg-accent1 dark:text-white absolute py-1.5 px-1.5 bottom-6 rounded-sm before:absolute before:content-[''] before:bg-accent1 before:w-5 before:h-5 before:clip-polygon before:top-4 before:left-2 before:-z-10 ltr:left-[calc(100%_-_30px)] rtl:right-[calc(100%_-_30px)]">Pemula</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-[10px] dark:bg-gray-700 flex items-center">
+                                <div class="bg-accent1 h-[6px] rounded-full mx-[2px]" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <!-- Single skill end -->
+
+                        <!-- Single skill start -->
+                        <div class="relative mb-7">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-medium text-primary dark:text-white">Figma</span>
+                                <span
+                                    class="text-xs font-medium text-white bg-accent1 dark:text-white absolute py-1.5 px-1.5 bottom-6 rounded-sm before:absolute before:content-[''] before:bg-accent1 before:w-5 before:h-5 before:clip-polygon before:top-4 before:left-2 before:-z-10 ltr:left-[calc(90%_-_20px)] rtl:right-[calc(90%_-_20px)]">Pemula</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-[10px] dark:bg-gray-700 flex items-center">
+                                <div class="bg-accent1 h-[6px] rounded-full mx-[2px]" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <!-- Single skill end -->
+
+                        <!-- Single skill start -->
+                        <div class="relative">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-medium text-primary dark:text-white">Canva</span>
+                                <span
+                                    class="text-xs font-medium text-white bg-accent1 dark:text-white absolute py-1.5 px-1.5 bottom-6 rounded-sm before:absolute before:content-[''] before:bg-accent1 before:w-5 before:h-5 before:clip-polygon before:top-4 before:left-2 before:-z-10 ltr:left-[calc(70%_-_20px)] rtl:right-[calc(70%_-_20px)]">Pemula</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-[10px] dark:bg-gray-700 flex items-center">
+                                <div class="bg-accent1 h-[6px] rounded-full mx-[2px]" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <!-- Single skill end -->
+                    </div>
+                    <!-- Column end -->
+
+                </div>
+                <!-- Resume wrapper end -->
+            </div>
+        </section>
+        <!--  Skill section end -->
+
+
+        <!-- Portfolio section start -->
+        <section
+            class="bg-[#EFF3F7] dark:bg-dark_primary_bg pt-[70px] lg:pt-[100px] pb-[40px] lg:pb-[70px] dark:border-t dark:border-b dark:border-dark_accent1"
+            id="portfolio">
+            <div class="container mx-auto">
+                <div
+                    class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
+                    <div class="max-w-full lg:max-w-[580px]  w-full">
+                        <span
+                            class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">PORTFOLIO</span>
+                        <h2
+                            class="text:[28px] lg:text-[48px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-[#000248] dark:text-white">
+                            Project Saya
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Filter portfolio start -->
+                <div class="isotope--filter">
+                    <div class="button-group filters-button-group flex justify-center flex-wrap gap-[30px]">
+                        <button
+                            class="button is-checked text-primary dark:text-white text-[18px] capitalize font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300"
+                            data-filter="*">Show All</button>
+                        <button
+                            class="button text-primary dark:text-white text-[18px] capitalize font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300"
+                            data-filter=".web">Web</button>
+                        <button
+                            class="button text-primary dark:text-white text-[18px] capitalize font-medium hover:text-accent1 dark:hover:text-accent1 transition duration-300"
+                            data-filter=".graphics">Desain</button>
+                    </div>
+                    <div class="portfolio__grid flex mt-[50px] mx-[-15px]">
+                        <!-- single portfolio start -->
+                        <div class="element-item mb-[30px] w-[50%] lg:w-[33.33%]  px-[15px] web portfolio__parent"
+                            data-category="web">
+                            <div class="relative overflow-hidden">
+                                <a href="#" class="popup-modal--open">
+                                    <span
+                                        class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                                        <div
+                                            class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                                            <span
+                                                class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h3
+                                                class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">
+                                                Web Farmasi</h3>
+                                            <span
+                                                class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">Website Jurusan Farmasi DOSQ-28</span>
+                                        </div>
+                                    </span>
+                                    <div class="w-full portfolio__image--card">
+                                        <img class="w-full transition duration-300" src="assets/images/portfolio/Farmasi.PNG"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <!-- Portfolio popup start Web Farmasi -->
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                    <div
+                                        class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
+                                    </div>
+                                    <!-- Modal content -->
+                                    <div
+                                        class="modal__portfolio--content relative z-10 h-full flex items-center px-[15px] max-w-[750px] xl:max-w-[800px] mx-auto transition duration-300 translate-y-[-50px]">
+                                        <div
+                                            class="overflow-y-auto modal__portfolio--content-inner bg-white dark:bg-gray-800  max-h-[60vh] lg:max-h-[80vh] p-8 rounded-2xl relative">
+                                            <button
+                                                class="modal__popup--close ltr:right-[10px] rtl:left-[10px] top-[10px] absolute w-[50px] h-[50px] bg-accent1 hover:bg-primary dark:hover:bg-dark_accent1 text-white rounded-full flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                            <h2 class="text-accent1 text-center font-bold">Web Farmasi</h2>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-file-text">
+                                                                <path
+                                                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                                </path>
+                                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Project :&nbsp;
+                                                        <span class="font-medium"> Website</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-code">
+                                                                <polyline points="16 18 22 12 16 6"></polyline>
+                                                                <polyline points="8 6 2 12 8 18"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Languages :&nbsp;
+                                                        <span class="font-medium">HTML, Bootstrap</span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-external-link">
+                                                                <path
+                                                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                </path>
+                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                            </svg>
+                                                        </span>
+                                                        Preview :&nbsp;
+                                                        <span
+                                                            class="font-medium transition-all duration-300 ease-in-out hover:text-accent1">
+                                                            <a href="https://www.envato.com/" target="_blank"
+                                                                rel="noopener noreferrer">www.envato.com</a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <p class="dark:text-white font-normal text-[17px]">
+                                                Website Kelas Farmasi DOSQ-28 adalah platform edukasi online yang menyediakan modul belajar, video tutorial, dan kuis interaktif untuk mahasiswa dan profesional farmasi. Pengguna dapat mengakses materi kuliah, berdiskusi dengan dosen, dan berpartisipasi dalam forum komunitas. Platform ini dirancang untuk mendukung pembelajaran efektif di bidang farmasi.
+                                            </p>
+                                            <div class="pr-3">
+                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
+                                                    src="assets/images/portfolio/full_farmasi.jpeg" alt="portfolio image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio popup end -->
+                            </div>
+                        </div>
+                        <!-- single portfolio end -->
+
+                        <!-- single portfolio start -->
+                        <div class="element-item mb-[30px] w-[50%] lg:w-[33.33%]  px-[15px] graphics portfolio__parent"
+                            data-category="graphics">
+                            <div class="relative overflow-hidden">
+                                <a href="#" class="popup-modal--open">
+                                    <span
+                                        class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                                        <div
+                                            class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                                            <span
+                                                class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h3
+                                                class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">
+                                                Web Desain E-Commerce</h3>
+                                            <span
+                                                class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">Desain Website E-Commerce
+                                        </div>
+                                    </span>
+                                    <div class="w-full portfolio__image--card">
+                                        <img class="w-full transition duration-300"
+                                            src="assets/images/portfolio/ecommerce.png" alt="">
+                                    </div>
+                                </a>
+
+                                <!-- Portfolio popup start Web Deasin E-Commerce -->
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                    <div
+                                        class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
+                                    </div>
+                                    <!-- Modal content -->
+                                    <div
+                                        class="modal__portfolio--content relative z-10 h-full flex items-center px-[15px] max-w-[750px] xl:max-w-[800px] mx-auto transition duration-300 translate-y-[-50px]">
+                                        <div
+                                            class="overflow-y-auto modal__portfolio--content-inner bg-white dark:bg-gray-800  max-h-[60vh] lg:max-h-[80vh] p-8 rounded-2xl relative">
+                                            <button
+                                                class="modal__popup--close ltr:right-[10px] rtl:left-[10px] top-[10px] absolute w-[50px] h-[50px] bg-accent1 hover:bg-primary dark:hover:bg-dark_accent1 text-white rounded-full flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                            <h2 class="text-accent1 text-center font-bold">
+                                                Desain E-Commerce
+                                            </h2>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-file-text">
+                                                                <path
+                                                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                                </path>
+                                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Project :&nbsp;
+                                                        <span class="font-medium">Deasin Website</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-code">
+                                                                <polyline points="16 18 22 12 16 6"></polyline>
+                                                                <polyline points="8 6 2 12 8 18"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Languages :&nbsp;
+                                                        <span class="font-medium">Figma</span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-external-link">
+                                                                <path
+                                                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                </path>
+                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                            </svg>
+                                                        </span>
+                                                        Preview :&nbsp;
+                                                        <span
+                                                            class="font-medium transition-all duration-300 ease-in-out hover:text-accent1">
+                                                            <a href="https://www.envato.com/" target="_blank"
+                                                                rel="noopener noreferrer">www.envato.com</a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <p class="dark:text-white font-normal text-[17px]">
+                                                Website e-commerce adalah platform online yang memungkinkan pengguna untuk membeli dan menjual produk serta layanan.
+                                            </p>
+                                            <div class="pr-3">
+                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
+                                                    src="assets/images/portfolio/big-2.png" alt="portfolio image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio popup end -->
+                            </div>
+                        </div>
+                        <!-- single portfolio end -->
+
+                        <!-- single portfolio start -->
+                        <div class="element-item mb-[30px] w-[50%] lg:w-[33.33%]  px-[15px] development portfolio__parent"
+                            data-category="development">
+                            <div class="relative overflow-hidden">
+                                <a href="#" class="popup-modal--open">
+                                    <span
+                                        class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                                        <div
+                                            class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                                            <span
+                                                class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h3
+                                                class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">
+                                                Next JS</h3>
+                                            <span
+                                                class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">Promote
+                                                your blog posts, case udie, and thehe branded videos.</span>
+                                        </div>
+                                    </span>
+                                    <div class="w-full portfolio__image--card">
+                                        <img class="w-full transition duration-300" src="assets/images/portfolio/3.png"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <!-- Portfolio popup start -->
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                    <div
+                                        class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
+                                    </div>
+                                    <!-- Modal content -->
+                                    <div
+                                        class="modal__portfolio--content relative z-10 h-full flex items-center px-[15px] max-w-[750px] xl:max-w-[800px] mx-auto transition duration-300 translate-y-[-50px]">
+                                        <div
+                                            class="overflow-y-auto modal__portfolio--content-inner bg-white dark:bg-gray-800  max-h-[60vh] lg:max-h-[80vh] p-8 rounded-2xl relative">
+                                            <button
+                                                class="modal__popup--close ltr:right-[10px] rtl:left-[10px] top-[10px] absolute w-[50px] h-[50px] bg-accent1 hover:bg-primary dark:hover:bg-dark_accent1 text-white rounded-full flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                            <h2 class="text-accent1 text-center font-bold">
+                                                Nextjs Project
+                                            </h2>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-file-text">
+                                                                <path
+                                                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                                </path>
+                                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Project :&nbsp;
+                                                        <span class="font-medium"> Website</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-code">
+                                                                <polyline points="16 18 22 12 16 6"></polyline>
+                                                                <polyline points="8 6 2 12 8 18"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Languages :&nbsp;
+                                                        <span class="font-medium">Photoshop, Illustration</span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center mt-2 lg:mt-0  ">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-user">
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
+                                                                <circle cx="12" cy="7" r="4"></circle>
+                                                            </svg>
+                                                        </span>
+                                                        Client :&nbsp; <span class="font-medium">Envato</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-external-link">
+                                                                <path
+                                                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                </path>
+                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                            </svg>
+                                                        </span>
+                                                        Preview :&nbsp;
+                                                        <span
+                                                            class="font-medium transition-all duration-300 ease-in-out hover:text-accent1">
+                                                            <a href="https://www.envato.com/" target="_blank"
+                                                                rel="noopener noreferrer">www.envato.com</a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <p class="dark:text-white font-normal text-[17px]">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                Mollitia placeat magnam possimus iusto blanditiis pariatur
+                                                labore explicabo quo repellat hic dolorum numquam
+                                                asperiores, voluptatum fugiat reiciendis aspernatur, non,
+                                                odio aperiam voluptas ex tempora vitae. Dolor, consequatur
+                                                quidem! Quas magni distinctio dolorum dolore natus, vel
+                                                numquam accusamus. Nostrum eligendi recusandae qui tempore
+                                                deserunt!
+                                            </p>
+                                            <div class="pr-3">
+                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
+                                                    src="assets/images/portfolio/big-3.png" alt="portfolio image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio popup end -->
+                            </div>
+                        </div>
+                        <!-- single portfolio end -->
+
+                        <!-- single portfolio start -->
+                        <div class="element-item mb-[30px] w-[50%] lg:w-[33.33%]  px-[15px] mobile portfolio__parent"
+                            data-category="mobile">
+                            <div class="relative overflow-hidden">
+                                <a href="#" class="popup-modal--open">
+                                    <span
+                                        class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                                        <div
+                                            class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                                            <span
+                                                class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h3
+                                                class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">
+                                                Android Development</h3>
+                                            <span
+                                                class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">Promote
+                                                your blog posts, case udie, and thehe branded videos.</span>
+                                        </div>
+                                    </span>
+                                    <div class="w-full portfolio__image--card">
+                                        <img class="w-full transition duration-300" src="assets/images/portfolio/4.png"
+                                            alt="">
+                                    </div>
+                                </a>
+
+                                <!-- Portfolio popup start -->
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                    <div
+                                        class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
+                                    </div>
+                                    <!-- Modal content -->
+                                    <div
+                                        class="modal__portfolio--content relative z-10 h-full flex items-center px-[15px] max-w-[750px] xl:max-w-[800px] mx-auto transition duration-300 translate-y-[-50px]">
+                                        <div
+                                            class="overflow-y-auto modal__portfolio--content-inner bg-white dark:bg-gray-800  max-h-[60vh] lg:max-h-[80vh] p-8 rounded-2xl relative">
+                                            <button
+                                                class="modal__popup--close ltr:right-[10px] rtl:left-[10px] top-[10px] absolute w-[50px] h-[50px] bg-accent1 hover:bg-primary dark:hover:bg-dark_accent1 text-white rounded-full flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                            <h2 class="text-accent1 text-center font-bold">
+                                                Android Development
+                                            </h2>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-file-text">
+                                                                <path
+                                                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                                </path>
+                                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Project :&nbsp;
+                                                        <span class="font-medium"> Website</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-code">
+                                                                <polyline points="16 18 22 12 16 6"></polyline>
+                                                                <polyline points="8 6 2 12 8 18"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Languages :&nbsp;
+                                                        <span class="font-medium">Photoshop, Illustration</span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center mt-2 lg:mt-0  ">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-user">
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
+                                                                <circle cx="12" cy="7" r="4"></circle>
+                                                            </svg>
+                                                        </span>
+                                                        Client :&nbsp; <span class="font-medium">Envato</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-external-link">
+                                                                <path
+                                                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                </path>
+                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                            </svg>
+                                                        </span>
+                                                        Preview :&nbsp;
+                                                        <span
+                                                            class="font-medium transition-all duration-300 ease-in-out hover:text-accent1">
+                                                            <a href="https://www.envato.com/" target="_blank"
+                                                                rel="noopener noreferrer">www.envato.com</a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <p class="dark:text-white font-normal text-[17px]">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                Mollitia placeat magnam possimus iusto blanditiis pariatur
+                                                labore explicabo quo repellat hic dolorum numquam
+                                                asperiores, voluptatum fugiat reiciendis aspernatur, non,
+                                                odio aperiam voluptas ex tempora vitae. Dolor, consequatur
+                                                quidem! Quas magni distinctio dolorum dolore natus, vel
+                                                numquam accusamus. Nostrum eligendi recusandae qui tempore
+                                                deserunt!
+                                            </p>
+                                            <div class="pr-3">
+                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
+                                                    src="assets/images/portfolio/big-4.png" alt="portfolio image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio popup end -->
+                            </div>
+                        </div>
+                        <!-- single portfolio end -->
+
+                        <!-- single portfolio start -->
+                        <div class="element-item mb-[30px] w-[50%] lg:w-[33.33%]  px-[15px] graphics portfolio__parent"
+                            data-category="graphics">
+                            <div class="relative overflow-hidden">
+                                <a href="#" class="popup-modal--open">
+                                    <span
+                                        class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                                        <div
+                                            class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                                            <span
+                                                class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h3
+                                                class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">
+                                                APP Development</h3>
+                                            <span
+                                                class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">Promote
+                                                your blog posts, case udie, and thehe branded videos.</span>
+                                        </div>
+                                    </span>
+                                    <div class="w-full portfolio__image--card">
+                                        <img class="w-full transition duration-300" src="assets/images/portfolio/5.png"
+                                            alt="">
+                                    </div>
+                                </a>
+
+                                <!-- Portfolio popup start -->
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                    <div
+                                        class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
+                                    </div>
+                                    <!-- Modal content -->
+                                    <div
+                                        class="modal__portfolio--content relative z-10 h-full flex items-center px-[15px] max-w-[750px] xl:max-w-[800px] mx-auto transition duration-300 translate-y-[-50px]">
+                                        <div
+                                            class="overflow-y-auto modal__portfolio--content-inner bg-white dark:bg-gray-800  max-h-[60vh] lg:max-h-[80vh] p-8 rounded-2xl relative">
+                                            <button
+                                                class="modal__popup--close ltr:right-[10px] rtl:left-[10px] top-[10px] absolute w-[50px] h-[50px] bg-accent1 hover:bg-primary dark:hover:bg-dark_accent1 text-white rounded-full flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                            <h2 class="text-accent1 text-center font-bold">
+                                                App Development
+                                            </h2>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-file-text">
+                                                                <path
+                                                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                                </path>
+                                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Project :&nbsp;
+                                                        <span class="font-medium"> Website</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-code">
+                                                                <polyline points="16 18 22 12 16 6"></polyline>
+                                                                <polyline points="8 6 2 12 8 18"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Languages :&nbsp;
+                                                        <span class="font-medium">Photoshop, Illustration</span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center mt-2 lg:mt-0  ">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-user">
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
+                                                                <circle cx="12" cy="7" r="4"></circle>
+                                                            </svg>
+                                                        </span>
+                                                        Client :&nbsp; <span class="font-medium">Envato</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-external-link">
+                                                                <path
+                                                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                </path>
+                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                            </svg>
+                                                        </span>
+                                                        Preview :&nbsp;
+                                                        <span
+                                                            class="font-medium transition-all duration-300 ease-in-out hover:text-accent1">
+                                                            <a href="https://www.envato.com/" target="_blank"
+                                                                rel="noopener noreferrer">www.envato.com</a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <p class="dark:text-white font-normal text-[17px]">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                Mollitia placeat magnam possimus iusto blanditiis pariatur
+                                                labore explicabo quo repellat hic dolorum numquam
+                                                asperiores, voluptatum fugiat reiciendis aspernatur, non,
+                                                odio aperiam voluptas ex tempora vitae. Dolor, consequatur
+                                                quidem! Quas magni distinctio dolorum dolore natus, vel
+                                                numquam accusamus. Nostrum eligendi recusandae qui tempore
+                                                deserunt!
+                                            </p>
+                                            <div class="pr-3">
+                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
+                                                    src="assets/images/portfolio/big-5.png" alt="portfolio image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio popup end -->
+                            </div>
+                        </div>
+                        <!-- single portfolio end -->
+
+                        <!-- single portfolio start -->
+                        <div class="element-item mb-[30px] w-[50%] lg:w-[33.33%]  px-[15px] web development portfolio__parent"
+                            data-category="development">
+                            <div class="relative overflow-hidden">
+                                <a href="#" class="popup-modal--open">
+                                    <span
+                                        class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                                        <div
+                                            class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                                            <span
+                                                class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h3
+                                                class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">
+                                            Web Pengelolaan Data Pindahan Warga</h3>
+                                            <span
+                                                class="portfolio--sub-title text-[17px] 2xs:hidden transition-all duration-500 translate-y-3">Promote
+                                                Data Warga Pindahan</span>
+                                        </div>
+                                    </span>
+                                    <div class="w-full portfolio__image--card">
+                                        <img class="w-full transition duration-300" src="assets/images/portfolio/warga.png"
+                                            alt="">
+                                    </div>
+                                </a>
+                                <!-- Portfolio popup start -->
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                    <div
+                                        class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
+                                    </div>
+                                    <!-- Modal content -->
+                                    <div
+                                        class="modal__portfolio--content relative z-10 h-full flex items-center px-[15px] max-w-[750px] xl:max-w-[800px] mx-auto transition duration-300 translate-y-[-50px]">
+                                        <div
+                                            class="overflow-y-auto modal__portfolio--content-inner bg-white dark:bg-gray-800  max-h-[60vh] lg:max-h-[80vh] p-8 rounded-2xl relative">
+                                            <button
+                                                class="modal__popup--close ltr:right-[10px] rtl:left-[10px] top-[10px] absolute w-[50px] h-[50px] bg-accent1 hover:bg-primary dark:hover:bg-dark_accent1 text-white rounded-full flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                            <h2 class="text-accent1 text-center font-bold">
+                                                Web Data Warga
+                                            </h2>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-file-text">
+                                                                <path
+                                                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                                </path>
+                                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Project :&nbsp;
+                                                        <span class="font-medium"> Website</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-code">
+                                                                <polyline points="16 18 22 12 16 6"></polyline>
+                                                                <polyline points="8 6 2 12 8 18"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Languages :&nbsp;
+                                                        <span class="font-medium">HTML, Bootstrap, Laravel</span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-external-link">
+                                                                <path
+                                                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                </path>
+                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                            </svg>
+                                                        </span>
+                                                        Preview :&nbsp;
+                                                        <span
+                                                            class="font-medium transition-all duration-300 ease-in-out hover:text-accent1">
+                                                            <a href="https://www.envato.com/" target="_blank"
+                                                                rel="noopener noreferrer">www.envato.com</a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <p class="dark:text-white font-normal text-[17px]">
+                                                Website Pengelolaan Data Pindahan Warga adalah platform digital yang memudahkan pengurusan administrasi pindah penduduk. Pengguna dapat mengisi formulir pindah, memverifikasi data, mengunggah dokumen, dan melacak status pengajuan mereka secara online. Situs ini juga menyediakan panduan, FAQ, dan layanan pelanggan untuk memastikan proses pindah berjalan lancar dan efisien.
+                                            </p>
+                                            <div class="pr-3">
+                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
+                                                    src="assets/images/portfolio/warga.png" alt="portfolio image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio popup end -->
+                            </div>
+                        </div>
+                        <!-- single portfolio end -->
+
+                        <!-- single portfolio start -->
+                        <div class="element-item mb-[30px] w-[50%] lg:w-[33.33%]  px-[15px] web portfolio__parent"
+                            data-category="web">
+                            <div class="relative overflow-hidden">
+                                <a href="#" class="popup-modal--open">
+                                    <span
+                                        class="absolute w-full h-full bg-accent1 left-0 top-0 opacity-0 transition duration-300 portfolio__overlay z-10">
+                                        <div
+                                            class="flex items-center justify-end flex-col text-center h-full text-white p-[20px]">
+                                            <span
+                                                class="portfolio--zoom flex items-center grow transition-all duration-300 translate-y-[-20px]">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-maximize">
+                                                    <path
+                                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h3
+                                                class="portfolio--title text-[18px] lg:text-[24px] font-heebo transition-all duration-300 translate-y-3">
+                                                Website BKK DOSQ-28</h3>
+                                        </div>
+                                    </span>
+                                    <div class="w-full portfolio__image--card">
+                                        <img class="w-full transition duration-300" src="assets/images/portfolio/bkk.jpeg"
+                                            alt="">
+                                    </div>
+                                </a>
+
+                                <!-- Portfolio popup start -->
+                                <div
+                                    class="modal_portfolio fixed h-screen w-full left-0 top-0 z-[98] opacity-0 invisible">
+                                    <div
+                                        class="modal_popup_overlay fixed w-full h-full bg-[#000] left-0 top-0 opacity-[0.3]">
+                                    </div>
+                                    <!-- Modal content -->
+                                    <div
+                                        class="modal__portfolio--content relative z-10 h-full flex items-center px-[15px] max-w-[750px] xl:max-w-[800px] mx-auto transition duration-300 translate-y-[-50px]">
+                                        <div
+                                            class="overflow-y-auto modal__portfolio--content-inner bg-white dark:bg-gray-800  max-h-[60vh] lg:max-h-[80vh] p-8 rounded-2xl relative">
+                                            <button
+                                                class="modal__popup--close ltr:right-[10px] rtl:left-[10px] top-[10px] absolute w-[50px] h-[50px] bg-accent1 hover:bg-primary dark:hover:bg-dark_accent1 text-white rounded-full flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-x">
+                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                                </svg>
+                                            </button>
+                                            <h2 class="text-accent1 text-center font-bold">
+                                                Website BKK Sekolah
+                                            </h2>
+                                            <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-file-text">
+                                                                <path
+                                                                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                                                                </path>
+                                                                <polyline points="14 2 14 8 20 8"></polyline>
+                                                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                                                <polyline points="10 9 9 9 8 9"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Project :&nbsp;
+                                                        <span class="font-medium"> Website Sekolah</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-code">
+                                                                <polyline points="16 18 22 12 16 6"></polyline>
+                                                                <polyline points="8 6 2 12 8 18"></polyline>
+                                                            </svg>
+                                                        </span>
+                                                        Languages :&nbsp;
+                                                        <span class="font-medium">HTML, CSS, JS, Bootstrap, Laravel</span>
+                                                    </p>
+                                                </div>
+
+                                                <div class="space-y-2">
+                                                    <p class="dark:text-white flex items-center mt-2 lg:mt-0  ">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-user">
+                                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                                </path>
+                                                                <circle cx="12" cy="7" r="4"></circle>
+                                                            </svg>
+                                                        </span>
+                                                        Client :&nbsp; <span class="font-medium">SMKM 2 KNG</span>
+                                                    </p>
+                                                    <p class="dark:text-white flex items-center">
+                                                        <span class="mr-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round"
+                                                                class="feather feather-external-link">
+                                                                <path
+                                                                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                                </path>
+                                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                                            </svg>
+                                                        </span>
+                                                        Preview :&nbsp;
+                                                        <span
+                                                            class="font-medium transition-all duration-300 ease-in-out hover:text-accent1">
+                                                            <a href="https://www.envato.com/" target="_blank"
+                                                                rel="noopener noreferrer">www.envato.com</a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <p class="dark:text-white font-normal text-[17px]">
+                                                Website BKK (Bursa Kerja Khusus) Sekolah adalah platform digital yang membantu siswa dan alumni dalam mencari pekerjaan. Di sini, pengguna dapat mencari dan melamar lowongan kerja, membuat dan mengelola profil serta CV, dan mengakses berbagai sumber daya karir seperti artikel dan panduan. Perusahaan juga dapat memposting lowongan dan mencari kandidat potensial. Selain itu, situs ini menyediakan informasi tentang acara karir dan layanan konseling untuk mendukung pengembangan karir pengguna.
+                                            </p>
+                                            <div class="pr-3">
+                                                <img class="max-w-full h-auto rounded-xl mt-6 mx-auto"
+                                                    src="assets/images/portfolio/full_bkk.jpeg" alt="portfolio image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Portfolio popup end -->
+                            </div>
+                        </div>
+                        <!-- single portfolio end -->
+                    </div>
+                </div>
+                <!-- Filter portfolio end -->
+
+            </div>
+        </section>
+        <!-- Portfolio section end -->
+
+
+        
+
+        <!-- Contact form section start -->
+        <section
+            class="py-[70px]  bg-cover bg-no-repeat bg-center bg-[url('../images/contact-bg.html')] bg-[#ECF1F6] dark:bg-[url('../images/contact-bg-dark.html')] dark:bg-dark_primary_bg"
+            id="contact">
+            <div class="container mx-auto">
+                <!-- Form wrapper start -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    <div>
+                        <!-- Section title -->
+                        <div class="mb-[55px] md:text-center">
+                            <span
+                                class="text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px]">KONTAK</span>
+                            <h2
+                                class="text:[28px] lg:text-[48px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-[#000248] dark:text-white">
+                                MARI BERKOMUNIKASI
+                            </h2>
+                        </div>
+                        <!-- Section title end -->
+
+                        <!-- from inner start-->
+                        <form action="#">
+                            <div class="grid grid-cols-2 gap-7">
+                                <div>
+                                    <input
+                                        class="w-full bg-white rounded px-5 py-2 h-11 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600"
+                                        type="text" name="name" placeholder="tulis disini ya!!">
+                                </div>
+                                <div>
+                                    <input
+                                        class="w-full bg-white rounded px-5 py-2 h-11 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600"
+                                        type="email" name="email" placeholder="@gmail.com">
+                                </div>
+                                <div class="col-span-2">
+                                    <textarea
+                                        class="w-full bg-white rounded px-5 py-2 h-40 dark:bg-transparent dark:text-slate-300 dark:border dark:border-slate-600"
+                                        name="message" id="" cols="30" rows="10" placeholder="apa yang ingin kamu tanyakan..."></textarea>
+                                </div>
+                            </div>
+                            <button class="btn solid-btn mt-12">Kirim Sekarang</button>
+                        </form>
+                        <!-- from inner end -->
+                    </div>
+
+                    <div
+                        class="ltr:only-md:pl-[30px] ltr:lg:pl-[50px] rtl:only-md:pr-[30px] rtl:lg:pr-[50px] mt-[30px] lg:mt-[150px] md:flex md:gap-[30px] md:flex-wrap">
+                        <!-- Single contact info start -->
+                        <div class="flex items-center">
+                            <div>
+                                <span
+                                    class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                    <svg width="25" height="34" fill="currentColor" stroke="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="ltr:pl-6 rtl:pr-6">
+                                <h3
+                                    class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
+                                    No Telepon</h3>
+                                <span
+                                    class="text-primary dark:text-slate-200 text-[22px] md:text-[18px] mt-5">+62 857 9353 4068
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Single contact info end -->
+
+                        <!-- Single contact info start -->
+                        <div class="flex items-center lg:mt-7">
+                            <div>
+                                <span
+                                    class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-mail">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="ltr:pl-6 rtl:pr-6">
+                                <h3
+                                    class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
+                                    Email</h3>
+                                <span
+                                    class="text-primary  dark:text-slate-200 text-[22px] md:text-[18px] mt-5">
+                                    muhamadsantosa857@gamil.com
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Single contact info end -->
+
+                        <!-- Single contact info start -->
+                        <div class="flex items-center lg:mt-7">
+                            <div>
+                                <span
+                                    class="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] bg-accent1 text-white flex items-center rounded-full justify-center">
+                                    <svg width="32" height="34" fill="currentColor" stroke="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                        <path
+                                            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="ltr:pl-6 rtl:pr-6">
+                                <h3
+                                    class="text-[28px] md:text-[22px] font-heebo font-bold text-primary dark:text-white">
+                                    Domisili</h3>
+                                <span class="text-primary  dark:text-slate-200 text-[22px] md:text-[18px] mt-5">
+                                    Kuningan Jawa Barat
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Single contact info end -->
+
+                    </div>
+                </div>
+                <!-- Form wrapper end -->
+            </div>
+        </section>
+        <!-- Contact form section end -->
+
+
+        <!-------- Plugins js ------>
+
+        <!-- Swiper js -->
+        <script src="../../../../cdn.jsdelivr.net/npm/swiper%408/swiper-bundle.min.js"></script>
+
+        <!-- imagesloaded js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
+
+        <!-- Isotope js -->
+        <script src="assets/js/isotope.pkgd.min.js" defer></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/script.js" defer></script>
+
+        <script>
+            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+            if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+                document.getElementById("light__to--dark")?.classList.add("dark--version");
+            }
+            if (localStorage.getItem("theme-color") === "light") {
+                document.getElementById("light__to--dark")?.classList.remove("dark--version");
+            } 
+        </script>
+</body>
+
+<!-- Mirrored from themihub.com/html/morex-demo/morex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 03:04:18 GMT -->
+
+</html>
